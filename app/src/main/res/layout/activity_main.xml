@@ -122,7 +122,7 @@
             android:background="@drawable/round_primary"
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
-            android:text="@string/get_parcha"
+            android:text="@string/get_Bills"
             android:textAllCaps="false"
             android:textColor="@color/White"
             app:layout_anchor="@+id/content_layout"
