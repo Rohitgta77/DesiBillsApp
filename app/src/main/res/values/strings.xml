@@ -1,9 +1,9 @@
 <resources>
-    <string name="app_name">Desi Parcha</string>
+    <string name="app_name">Desi Bills</string>
     <string name="action_settings">Settings</string>
     <!-- Strings used for fragments for navigation -->
     <string name="items_name">Items name</string>
     <string name="rate">Rate</string>
-    <string name="get_parcha">Get Parcha</string>
-    <string name="title_activity_parcha">ParchaActivity</string>
+    <string name="get_Bills">Get Bills</string>
+    <string name="title_activity_Bills">BillsActivity</string>
 </resources>
