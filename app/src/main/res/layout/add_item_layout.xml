@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="5dp"
+            android:paddingStart="10dp"
+            android:hint="@string/items_name"
+            android:background="@drawable/round_grey"/>
+        <EditText
+            android:inputType="number"
+            android:layout_width="150dp"
+            android:layout_height="35dp"
+            android:layout_marginEnd="5dp"
+            android:paddingStart="10dp"
+            android:hint="@string/rate"
+            android:background="@drawable/round_grey"/>
+
+        <ImageView
+            android:id="@+id/del_icon"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:tint="@color/Black"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="5dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_close"/>
+    </LinearLayout>
+
+    <TableLayout
+        android:id="@+id/table_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginVertical="20dp"
+        android:layout_marginHorizontal="10dp"
+        android:background="@color/WhiteSmoke">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Weight"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textSize="25sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Package"
+                android:textSize="25sp"
+                android:gravity="center"
+                android:layout_weight="1"/>
+            <ImageView
+                android:id="@+id/add_btn"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:tint="@color/Black"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="5dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_add"/>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/weight_TableRow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+            <EditText
+                android:inputType="number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textSize="25sp"/>
+            <EditText
+                android:inputType="number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textSize="25sp"/>
+            <ImageView
+                android:id="@+id/del"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:tint="@color/Black"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="5dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_close"/>
+        </TableRow>
+        <LinearLayout
+            android:id="@+id/weightRegion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"/>
+    </TableLayout>
+
+
+</LinearLayout>
