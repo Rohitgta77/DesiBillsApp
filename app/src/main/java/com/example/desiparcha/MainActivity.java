@@ -15,13 +15,9 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.TableLayout;
 import android.widget.Toast;
-
-import org.w3c.dom.Text;
 
 import java.util.ArrayList;
 
@@ -52,12 +48,12 @@ public class MainActivity extends AppCompatActivity {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                getParcha();
+                getBills();
             }
         });
     }
 
-    private void getParcha(){
+    private void getBills(){
         ArrayList<ItemsDetails> arrayList= new ArrayList<>();
         ItemsDetails itemsDetails =new ItemsDetails();
         boolean isValid =true;
